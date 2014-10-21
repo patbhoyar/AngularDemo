@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="thenames">
+<head>
+    <title></title>
+    <script src="js/angular.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div>
+    <input type="search" ng-model="search"/>
+</div>
+
+<div ng-controller="List">
+    <ul>
+        <li ng-repeat="name in names | filter:search ">{{ name }}</li>
+    </ul>
+    <div>{{abc}}</div>
+</div>
+
+
+<script>
+
+
+
+    var phonecatApp = angular.module('thenames', []);
+
+    phonecatApp.controller('List', function ($scope) {
+        $scope.names = ["Sachin", "Saurav", "Rahul", "Ajay", "Azhar", "Robin", "Mongia", "Srinath", "Agarkar", "Prasad", "Kumble"];
+        $scope.abc = "hello";
+    });
+
+
+</script>
+
+</body>
+</html>
