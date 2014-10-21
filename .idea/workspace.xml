@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5958eff9-248f-4bf4-8ecb-528cc66dbffc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ngrepeat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ngrepeat.html" afterPath="$PROJECT_DIR$/ngrepeat.html" />
     </list>
     <ignored path="AngularDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +46,7 @@
       <file leaf-file-name="ngrepeat.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ngrepeat.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="53" selection-start="301" selection-end="301" vertical-scroll-proportion="0.1907357" vertical-offset="0" max-vertical-offset="1101">
+            <state line="22" column="45" selection-start="615" selection-end="615" vertical-scroll-proportion="0.29972753" vertical-offset="0" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
@@ -239,7 +238,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ngrepeat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="53" selection-start="301" selection-end="301" vertical-scroll-proportion="0.1907357" vertical-offset="0" max-vertical-offset="1101">
+        <state line="22" column="45" selection-start="615" selection-end="615" vertical-scroll-proportion="0.29972753" vertical-offset="0" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>

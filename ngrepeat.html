@@ -12,9 +12,24 @@
 
 <div ng-controller="List">
     <ul>
-        <li ng-repeat="name in names | filter:search ">{{ name }}</li>
+        <li ng-repeat="player in players | filter:search ">{{ player.name +" : "+ player.avg }}
+            <button ng-click="remove($index)">X</button>
+            <span ng-show="$first">First</span>
+            <span ng-show="$middle">Middle</span>
+            <span ng-show="$last">Last</span>
+        </li>
     </ul>
-    <div>{{abc}}</div>
+
+    <span>This is a team of {{ players.length }} players.</span>
+
+    <div>
+        <label>Name: </label><input type="text" ng-model="new_name"/><br/>
+        <label>Batting Average: </label><input type="number" ng-model="new_avg"/><br/>
+        <button ng-click="add()">Add</button>
+
+    </div>
+
+
 </div>
 
 
@@ -25,8 +40,32 @@
     var phonecatApp = angular.module('thenames', []);
 
     phonecatApp.controller('List', function ($scope) {
-        $scope.names = ["Sachin", "Saurav", "Rahul", "Ajay", "Azhar", "Robin", "Mongia", "Srinath", "Agarkar", "Prasad", "Kumble"];
-        $scope.abc = "hello";
+        $scope.players = [
+            {name: "Sachin", avg: 58},
+            {name: "Saurav", avg: 44},
+            {name: "Rahul", avg: 57},
+            {name: "Ajay", avg: 39},
+            {name: "Azhar", avg: 48},
+            {name: "Robin", avg: 28},
+            {name: "Mongia", avg: 38},
+            {name: "Srinath", avg: 29},
+            {name: "Agarkar", avg: 19},
+            {name: "Prasad", avg: 12},
+            {name: "Kumble", avg: 15},
+        ];
+
+        $scope.add = function(){
+            $scope.players.push({
+               name: $scope.new_name,
+               avg: $scope.new_avg
+            });
+            $scope.new_name = "";
+            $scope.new_avg = "";
+        };
+
+        $scope.remove = function(index){
+            $scope.players.splice(index, 1);
+        };
     });
 
 
